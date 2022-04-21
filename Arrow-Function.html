@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        let materials = [
+            'Helium',
+            'Phasforash',
+            'Potesium'
+        ];
+        console.log(materials.map(materials => materials.length));
+
+        const greet = a => "Good Morning";
+        console.log(greet);
+
+        let dft = (a, b = 20) => {
+            console.log(a + b);
+        };
+
+        dft(10,);
+
+        let hello = () =>  "Welcome";
+        console.log(hello());
+
+        let sayHi = name => `Hi! ${name}`;
+        console.log(sayHi ("Vishambar"));
+
+        let name =(fName,lName) => `Welcome ${Fname}$ {lName}`;
+        console.log("Vishambar", "Dutt");
+
+        let add = () => {
+            let a =20;
+            let b=30;
+            return a + b ;
+                }
+                console.log(add());
+
+
+    </script>
+</body>
+
+</html>

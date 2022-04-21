@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Polymorphism</title>
+</head>
+<body>
+    <script>
+         class student{
+        constructor(fName, lName, sClass){
+            this.firstName = fName;
+            this.lastName = lName;
+            this.class = sClass;
+        }
+        getStudenName(){
+            return this.fName; ""+ this.lName;
+        }
+    }
+    class regStudent extends student {
+        getfee(){
+            return this.class * 10;
+        }
+    }
+    const reStu = new regStudent('Vishnu', 'Sharma', 8 );
+    console.log (reStu.getfee());
+    class partStudent extends student {
+        getfee(){
+            return this.class * 6;
+        }
+    }
+    const pStu = new partStudent('Amit', 'Kumar', 6);
+    console.log(pStu.getfee());
+</script>
+</body>
+   
+   
+</html>
