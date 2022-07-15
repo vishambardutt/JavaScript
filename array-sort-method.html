@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sort Method</title>
+</head>
+<!-- sort -->
+<!-- ASCII TABLE -->
+<!--char ASCII:Value  -->
+<!--
+'0' : 48
+'1':  49
+'2' : 50
+'3' : 51
+'4' : 52
+'5' : 53
+'6' : 54
+'7' : 55
+'8' : 56
+'9' : 57
+
+'A': 65
+'B': 65
+'C': 67
+'D': 68
+'E': 69
+'F': 70
+'G': 71
+'H': 72
+'I': 73
+'J': 74
+
+'[':91
+'\':92
+']':93
+'^':94
+'_':95
+''': 96
+
+
+'a': 97
+'b': 99
+'c': 99
+'d': 100
+'e': 101
+'f': 102
+'g': 103
+'h': 104
+'i': 105
+'j': 106
+ -->
+<script>
+    // 3,9,6,34,120
+    // 8,900,879,42
+    const numbers = [3, 9, 6, 34, 120];
+
+    numbers.sort((a, b) => a - b);
+    console.log(numbers);
+
+
+    const userNames = ['Amit', 'Rohan', 'Rohit', 'Sachin'];
+    userNames.sort();
+    console.log(userNames);
+
+    // lowToHigh 
+    const products =[
+        {productId: 1, productName:"p1", price: 3200},
+        {productId: 2, productName:"p1", price: 2200},
+        {productId: 3, productName:"p1", price: 200},
+        {productId: 4, productName:"p1", price: 4200},
+        {productId: 5, productName:"p1", price: 3000},
+    ]
+    const lowToHigh = products.slice(0).sort((a,b)=>{
+        return a.price-b.price
+    });
+    console.log(lowToHigh);
+     //highToLow
+     const highToLow = products.slice(0).sort((a,b)=>{
+        return b.price-a.price
+     });
+     console.log(highToLow);
+</script>
+
+<body>
+
+
+
+
+</body>
+
+</html>
