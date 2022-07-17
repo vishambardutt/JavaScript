@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Laxical Scope</title>
+</head>
+<script>
+    // The lexical scope allows a function scope to access statically
+    // the variables from the outer scopes. Finally, a closure is a function
+    // that captures variables from its lexical scope.
+    
+    function init() {
+        //laxical scope
+        const myName = "Vishambar";
+        //clouser
+        function displayName() {
+            console.log("inside disdplay name, myName");
+        }
+
+        console.log(myName);
+
+        displayName();
+    }
+    init();
+
+
+    function myApp() {
+        // laxical scope
+        const myVar = "Value1";
+        // closure
+        function myFunc() {
+            console.log("inside myfun, myVar");
+        }
+        console.log(myVar);
+        myFunc();
+
+    }
+    myApp();
+</script>
+
+<body>
+
+</body>
+
+</html>
